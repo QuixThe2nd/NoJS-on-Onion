@@ -3,8 +3,11 @@
 	"name": "NoJS on Onion",
 	"version": "1.0",
 	"description": "Disables JavaScript on .onion domains",
-	"permissions": ["webRequest", "webRequestBlocking", "*://*.onion/*"],
+	"permissions": ["webRequest", "webRequestBlocking", "*://*.onion/*", "storage"],
 	"background": {
 		"scripts": ["background.js"]
+	},
+	"options_ui": {
+		"page": "options.html"
 	}
 }
